@@ -3,6 +3,8 @@
   --blanco: #FFF;
   --negro: #  000;
   --gris: #696969;
+  --azul: #0068ff;
+  --colorBorder: #cecece;
   --fuentePrincipal: "Roboto", serif;
 }
 html {
@@ -20,6 +22,9 @@ p {
   font-size: 1.6rem;
   font-family: var(--fuentePrincipal);
   color: var(--negro);
+}
+img {
+  width: 50%;
 }
 select {
   -webkit-appearance: none;
@@ -41,14 +46,14 @@ select {
   color: black;
   outline: none;
 }
-
 h1 {
     font-family: var(--fuentePrincipal);
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 7rem;
+    margin-bottom: 0;
 }
 /* Utilidades */
-.no-margin {
+/* .no-margin {
   margin: 0;
 }
 .no-padding {
@@ -56,14 +61,15 @@ h1 {
 }
 .centrar-texto {
   text-align: center;
-}
+} */
 .contenido-header {
   font-family: var(--fuentePrincipal);
   font-weight: bold;
   text-align: center;
 }
-.parrafo-header {
+.parrafo__header {
   color: var(--gris);
+  margin-top: 0;
 }
 .contenedor {
   display: grid;
@@ -80,18 +86,100 @@ h1 {
 }
 .contenedor-tarjeta {
   background-color: #d3e4ff;
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: var(--fuentePrincipal);
   padding: 1rem 1.5rem;
   
 }
-.consume-body {
-  font-size: 3.5rem;
+.consume-header {
+  font-size: 2rem;
   font-weight: bold;
-  color: #0068ff;
+}
+.consume-body {
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: var(--azul);
   margin: 0;
 }
-.consume-header {
+.consume-footer {
   font-size: 1.5rem;
+  margin: 0;
+  
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem;
+  text-transform: none;
+}
+.boton-encontrar {
+  font-size: 2rem;
   font-weight: bold;
+  padding: 12px 32px;
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.boton-comprar {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 12px 32px;
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 8.5px;
+  cursor: pointer;
+}
+.boton-encontrar:hover {
+  background-color: var(--azul);
+}
+.boton-encontrar:active {
+  background-color: var(--azul);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+  gap: 2rem;
+  /*column-gap: 2rem;
+  row-gap: 2rem;*/
+}
+@media (min-width:768px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Productos */
+.producto {
+  background-color: var(--blanco);
+  padding: 1rem;
+  border-radius: 6px;
+  border: solid 1px var(--colorBorder);
+}
+.producto__nombre {
+  font-size: 2.5rem;
+}
+.producto__modelo {
+  font-size: 1.8rem;
+  color: var(--gris);
+}
+.producto__potencia {
+  font-size: 1.8rem;
+  color: var(--gris);
+}
+.producto__precio {
+  font-size: 3.5rem;
+  color: var(--gris);
+}
+.producto__nombre,
+.producto__modelo, 
+.producto__potencia, 
+.producto__precio {
+  font-family: var(--fuentePrincipal);
+  margin: 1rem 0;
+  text-align: left;
+  line-height: 1.2;
 }
