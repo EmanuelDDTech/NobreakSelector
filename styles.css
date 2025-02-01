@@ -5,8 +5,21 @@
   --gris: #696969;
   --fuentePrincipal: "Roboto", serif;
 }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 * {
     box-sizing: border-box;
+}
+body {
+  background-color: var(--blanco);
+  line-height: 1.5;
+}
+p {
+  font-size: 1.6rem;
+  font-family: var(--fuentePrincipal);
+  color: var(--negro);
 }
 select {
   -webkit-appearance: none;
@@ -28,19 +41,21 @@ select {
   color: black;
   outline: none;
 }
-  /* For IE10 */
-select::-ms-expand {
-    display: none;
-}
+
 h1 {
     font-family: var(--fuentePrincipal);
     font-weight: bold;
     font-size: 5rem;
 }
-p {
-  font-size: 1rem;
-  font-family: var(--fuentePrincipal);
-  color: var(--negro);
+/* Utilidades */
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.centrar-texto {
+  text-align: center;
 }
 .contenido-header {
   font-family: var(--fuentePrincipal);
@@ -51,19 +66,30 @@ p {
   color: var(--gris);
 }
 .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .5rem;
+  padding-inline: 6rem;
+}
+.entrada-componentes {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 3rem;
 }
 .contenedor-tarjeta {
-  background-color: #a9ccff;
+  background-color: #d3e4ff;
   border-radius: 8px;
   font-family: var(--fuentePrincipal);
   padding: 1rem 1.5rem;
   
 }
 .consume-body {
-  font-size: 15rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #0068ff;
+  margin: 0;
 }
 .consume-header {
   font-size: 1.5rem;
