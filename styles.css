@@ -59,9 +59,16 @@ h1 {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
-h1, h2, h3, h4, h5, h6, hr, p, pre {
-  margin: 0;
+h2 {
+  font-family: var(--fuentePrincipal);
+  color: var(--negro);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
+/* h1, h2, h3, h4, h5, h6, hr, p, pre {
+  margin: 0;
+} */
 
 /* Utilidades */
 /* .no-margin {
@@ -151,10 +158,6 @@ h1, h2, h3, h4, h5, h6, hr, p, pre {
 }
 .boton-encontrar:active {
   background-color: var(--azul);
-}
-.nobreaks {
-  max-width: 120rem;
-  margin: 0 auto;
 }
 .grid {
   display: grid;
