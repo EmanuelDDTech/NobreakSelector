@@ -42,8 +42,7 @@ select {
   cursor: pointer;
   font-family: var(--fuentePrincipal);
   font-size: 14px;
-  font-weight: bold;
-  font-weight: normal;
+  font-weight: 500;
   color: black;
   outline: none;
   margin: 0 0 16px;
@@ -151,7 +150,7 @@ a {
 .boton-encontrar {
   font-family: var(--fuentePrincipal);
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
   padding: 12px 32px;
   background-color: var(--azul);
   color: white;
@@ -161,7 +160,7 @@ a {
 }
 .boton-comprar {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   padding: 8px 16px;
   background-color: var(--azul);
   color: white;
@@ -196,6 +195,9 @@ a {
   padding: 1.6rem;
   border-radius: 6px;
   border: solid 1px var(--colorBorder);
+}
+.producto__imagen {
+  align-self: center;
 }
 .producto__nombre {
   font-size: 2rem;
