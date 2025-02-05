@@ -19,41 +19,44 @@ body {
   line-height: 1.5;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: var(--fuentePrincipal);
   color: var(--negro);
+  margin: 0 0 32px;
 }
 img {
-  width: 50%;
+  max-height: 250px;
 }
 select {
   -webkit-appearance: none;
   appearance: none;
   min-width: min(100%, 240px);
-  padding: 12px 24px 12px 12px;
+  padding: 8px 16px;
   line-height: 24px;
   border: solid 1px #cecece;
   border-radius: 6px;
-  /*   background-image: url(https://www.svgrepo.com/show/362528/caret-down-bold.svg); */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='180 -360 600 1200'%3E%3Cpath d='M1015 10q-10-10-23-10t-23 10L512 492 55 10Q45 0 32 0T9 10Q0 20 0 34t9 24l480 506q10 10 23 10t23-10l480-506q9-10 9-24t-9-24z'%20fill%3D%27slategray%27/%3E%3C/svg%3E");
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: calc(100% - 12px) center;
   cursor: pointer;
   font-family: var(--fuentePrincipal);
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   font-weight: normal;
   color: black;
   outline: none;
+  margin: 0 0 16px;
+  padding: 8px 16px;
 }
 h1 {
     display: block;
     font-family: var(--fuentePrincipal);
     font-weight: bold;
-    font-size: 7rem;
-    margin-bottom: 0;
+    font-size: 6rem;
+    margin: 0 0 8px;
     text-align: center;
-    margin-block-start: 0.67em;
+    /* margin-block-start: 0.67em; */
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
@@ -62,11 +65,18 @@ h2 {
   font-family: var(--fuentePrincipal);
   color: var(--negro);
   font-weight: bold;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  margin: 32px 0 16px;
+}
+h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: var(--negro);
 }
 a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 /* h1, h2, h3, h4, h5, h6, hr, p, pre {
   margin: 0;
@@ -96,15 +106,17 @@ a {
   max-width: 140rem;
   margin: 0 auto;
 }
-.contenedor-calculator {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.4rem;
-}
 .entrada-componentes {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 2rem;
+}
+.contenedor-calculator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* display: flex;
+  flex-direction: row; */
   gap: 2rem;
 }
 .contenedor-tarjeta {
@@ -119,25 +131,26 @@ a {
   margin: 0 0 8px 0;
 }
 .consume-body {
-  font-size: 6.5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: var(--azul);
   margin: 0;
   line-height: 1;
 }
 .consume-footer {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 16px 0 0 0;
 }
 .boton {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.5rem;
   text-transform: none;
+  margin: 32px 0 0;
 }
 .boton-encontrar {
-  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.8rem;
   font-weight: bold;
   padding: 12px 32px;
   background-color: var(--azul);
@@ -149,12 +162,15 @@ a {
 .boton-comprar {
   font-size: 2rem;
   font-weight: bold;
-  padding: 12px 32px;
+  padding: 8px 16px;
   background-color: var(--azul);
   color: white;
   border: none;
   border-radius: 8.5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
 }
 .boton-encontrar:hover {
   background-color: var(--azul);
@@ -177,22 +193,26 @@ a {
 /* Productos */
 .producto {
   background-color: var(--blanco);
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 6px;
   border: solid 1px var(--colorBorder);
 }
 .producto__nombre {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-.producto__modelo,
-.producto__potencia {
-  font-size: 1.8rem;
+.producto__modelo {
+  font-size: 1.4rem;
   color: var(--gris);
+}
+.producto__potencia {
+  font-size: 1.4rem;
+  color: var(--negro);
 }
 .producto__precio {
-  font-size: 3.5rem;
-  color: var(--gris);
-  line-height: 1.2;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--negro);
+  line-height: 1.2;margin: 8px 0 0;
 }
 .producto__nombre,
 .producto__modelo,
