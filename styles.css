@@ -168,9 +168,7 @@ a {
   border: none;
   border-radius: 8.5px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  max-width: max-content;
+  width: 100%;
 }
 .boton-encontrar:hover {
   background-color: var(--azul);
