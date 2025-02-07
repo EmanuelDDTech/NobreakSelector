@@ -213,13 +213,13 @@ a {
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--negro);
-  line-height: 1.2;margin: 8px 0 0;
+  line-height: 1.2;
+  margin: 8px 0 0;
 }
 .producto__nombre,
 .producto__modelo,
 .producto__potencia,
 .producto__precio {
-  font-family: var(--fuentePrincipal);
   margin: 1rem 0;
   text-align: left;
   line-height: 1.2;
