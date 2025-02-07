@@ -191,8 +191,8 @@ a {
 /* Productos */
 .producto {
   background-color: var(--blanco);
-  padding: 1.6rem;
-  border-radius: 6px;
+  padding: 2.4rem;
+  border-radius: 10px;
   border: solid 1px var(--colorBorder);
 }
 .producto__imagen {
