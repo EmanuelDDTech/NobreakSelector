@@ -1,11 +1,16 @@
 /* Variables */
+@font-face {
+  font-family: "Geist";
+  src: url("./fonts/Geist-VariableFont_wght.ttf");
+}
+
 :root {
   --blanco: #fff;
   --negro: #000;
   --gris: #696969;
   --azul: #2563eb;
   --colorBorder: #cecece;
-  --fuentePrincipal: "Roboto", serif;
+  --fuentePrincipal: "Geist", serif;
 }
 html {
   box-sizing: border-box;
@@ -17,10 +22,10 @@ html {
 body {
   background-color: var(--blanco);
   line-height: 1.5;
+  font-family: var(--fuentePrincipal);
 }
 p {
   font-size: 1.4rem;
-  font-family: var(--fuentePrincipal);
   color: var(--negro);
   margin: 0 0 32px;
 }
@@ -40,17 +45,16 @@ select {
   background-repeat: no-repeat;
   background-position: calc(100% - 12px) center;
   cursor: pointer;
-  font-family: var(--fuentePrincipal);
   font-size: 14px;
   font-weight: 500;
   color: black;
   outline: none;
   margin: 0 0 16px;
   padding: 8px 16px;
+  font-family: "Geist";
 }
 h1 {
     display: block;
-    font-family: var(--fuentePrincipal);
     font-weight: bold;
     font-size: 6rem;
     margin: 0 0 8px;
@@ -61,7 +65,6 @@ h1 {
     unicode-bidi: isolate;
 }
 h2 {
-  font-family: var(--fuentePrincipal);
   color: var(--negro);
   font-weight: bold;
   font-size: 2.4rem;
@@ -121,7 +124,6 @@ a {
 .contenedor-tarjeta {
   background-color: #d3e4ff;
   border-radius: 10px;
-  font-family: var(--fuentePrincipal);
   padding: 16px;
 }
 .consume-header {
@@ -148,7 +150,6 @@ a {
   margin: 32px 0 0;
 }
 .boton-encontrar {
-  font-family: var(--fuentePrincipal);
   font-size: 1.8rem;
   font-weight: 500;
   padding: 12px 32px;
